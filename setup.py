@@ -10,8 +10,7 @@ setup(
     use_scm_version=[],
     setup_requires=[
         'numpy',
-        'matplotlib',
-        'cv2'
+        'matplotlib'
     ],
     install_requires=[]
 )
