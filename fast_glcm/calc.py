@@ -135,9 +135,9 @@ def homogeneity(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     return homo
 
 
-def ASM(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
+def energy(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     '''
-    calc glcm asm, energy
+    calc glcm energy
     '''
     h, w = img.shape
     glcm = fast_glcm(img, vmin, vmax, levels, ks, distance, angle)
@@ -147,7 +147,7 @@ def ASM(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
             asm += glcm[i, j]**2
 
     ene = np.sqrt(asm)
-    return asm, ene
+    return ene
 
 
 def max(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
