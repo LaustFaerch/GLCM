@@ -1,8 +1,7 @@
 # coding: utf-8
 
-import numpy as np
-import matplotlib.pyplot as plt
 import cv2
+import numpy as np
 
 def fast_glcm(img, vmin=0, vmax=255, levels=8, kernel_size=5, distance=1.0, angle=0.0):
     '''
