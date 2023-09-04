@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='glcm',
+    name='fast_glcm',
     description='fast grey-level co-occurrence matrix calculations',
     author='lafa',
     author_email='lfa027@uit.no',
