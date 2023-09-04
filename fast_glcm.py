@@ -3,7 +3,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import cv2
-from skimage import data
 
 def fast_glcm(img, vmin=0, vmax=255, levels=8, kernel_size=5, distance=1.0, angle=0.0):
     '''

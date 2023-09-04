@@ -11,8 +11,7 @@ setup(
     setup_requires=[
         'numpy',
         'matplotlib',
-        'cv2',
-        'skimage'
+        'cv2'
     ],
     install_requires=[]
 )
