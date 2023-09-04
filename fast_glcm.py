@@ -61,7 +61,7 @@ def fast_glcm(img, vmin=0, vmax=255, levels=8, kernel_size=5, distance=1.0, angl
     return glcm
 
 
-def fast_glcm_mean(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
+def mean(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     '''
     calc glcm mean
     '''
@@ -75,7 +75,7 @@ def fast_glcm_mean(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.
     return mean
 
 
-def fast_glcm_std(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
+def std(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     '''
     calc glcm std
     '''
@@ -95,7 +95,7 @@ def fast_glcm_std(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0
     return std
 
 
-def fast_glcm_contrast(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
+def contrast(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     '''
     calc glcm contrast
     '''
@@ -109,7 +109,7 @@ def fast_glcm_contrast(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angl
     return cont
 
 
-def fast_glcm_dissimilarity(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
+def dissimilarity(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     '''
     calc glcm dissimilarity
     '''
@@ -123,7 +123,7 @@ def fast_glcm_dissimilarity(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0,
     return diss
 
 
-def fast_glcm_homogeneity(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
+def homogeneity(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     '''
     calc glcm homogeneity
     '''
@@ -137,7 +137,7 @@ def fast_glcm_homogeneity(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, a
     return homo
 
 
-def fast_glcm_ASM(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
+def ASM(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     '''
     calc glcm asm, energy
     '''
@@ -152,7 +152,7 @@ def fast_glcm_ASM(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0
     return asm, ene
 
 
-def fast_glcm_max(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
+def max(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     '''
     calc glcm max
     '''
@@ -161,7 +161,7 @@ def fast_glcm_max(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0
     return max_
 
 
-def fast_glcm_entropy(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
+def entropy(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angle=0.0):
     '''
     calc glcm entropy
     '''
