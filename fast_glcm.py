@@ -101,7 +101,7 @@ def fast_glcm_contrast(img, vmin=0, vmax=255, levels=8, ks=5, distance=1.0, angl
     '''
     h, w = img.shape
     glcm = fast_glcm(img, vmin, vmax, levels, ks, distance, angle)
-    cont = np.zeros((h,w ), dtype=np.float32)
+    cont = np.zeros((h, w), dtype=np.float32)
     for i in range(levels):
         for j in range(levels):
             cont += glcm[i, j] * (i - j)**2
